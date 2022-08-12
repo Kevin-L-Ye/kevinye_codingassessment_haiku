@@ -1,38 +1,5 @@
 ﻿using System.Text;
 
-/*
-The engine reads a “poem” from a file and answers whether or not it is a valid haiku poem.
-
-For the purposes of the exercise, a poem is a haiku poem if and only if:
-It is exactly three lines long, and
-The three lines contain 5, 7, and 5 syllables, respectively.
-
-The number of syllables in a line is the sum of the syllables in each word in that line. 
-The engine will use four “rules” to count the number of syllables in a word:
-
-A vowel – A, E, I, O, or U – corresponds to a syllable in the word.
-
-As an exception to (1), any pair of consecutive vowels only counts as one syllable, not two.
-A “Y” that appears at the end of a word is also a vowel.
-
-An “E” at the end of a word is “silent” and not a vowel if the word contains another vowel.
-For example, “Madison” has 3 syllables (as the “a”, “i”, and “o” are separated by consonants), 
-while “heart” has 1 syllable (by rule 2 - the “ea” are consecutive). 
-
-Also, “your” has 1 syllable (“ou” are consecutive, by rule 2, and “Y” is not at then end, so not a vowel, by rule 3), 
-but “lucky” has 2 syllables (due to the “u” and the “y” at the end).
-
-Lastly, “code” has one syllable (because the "e" is silent and not a vowel, by rule 4), 
-but “the” also has 1 syllable (the “e” is at the end, however it is the only vowel in the word).
-The engine will output “Valid haiku” or “Not a haiku poem because <rule>”.
-
-A sample input could be the three lines:
-
-An old silent pond
-A frog jumps into the pond
-Splash! Silence again
-*/
-
 namespace kevinye_codingassessment_smartcommunications
 {
     public class HaikuParser
