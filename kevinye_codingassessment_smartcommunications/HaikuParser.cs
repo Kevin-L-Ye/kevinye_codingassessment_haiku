@@ -71,9 +71,7 @@ namespace kevinye_codingassessment_smartcommunications
                         syllables += wordVowelCount(word, 0);
                     }
 
-                    Console.WriteLine($"Line {lineNumber + 1} has {syllables} syllables");
                     // Compare to expected syllables for line
-
                     if (syllables != expectedSyllableCount[lineNumber])
                     {
                         failureReason = $"Line {lineNumber + 1} contains {syllables} syllables instead of the expected {expectedSyllableCount[lineNumber]}.";
