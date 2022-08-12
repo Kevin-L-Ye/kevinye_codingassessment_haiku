@@ -9,9 +9,9 @@ bool isHaiku = haikuParser.IsHaiku(inputText, out error);
 
 if (isHaiku)
 {
-    Console.WriteLine("Text is a haiku");
+    Console.WriteLine("Valid haiku");
 }
 else
 {
-    Console.WriteLine($"Text is not a haiku for reason: {error}");
+    Console.WriteLine($"Not a haiku poem because {error}");
 }
